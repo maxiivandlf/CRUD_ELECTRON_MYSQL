@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <title>CRUD electron</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 p-4 my-auto">
+          <form class="card card-body" id="productForm">
+            <div class="form-group py-2">
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                class="form-control"
+                placeholder="Nombre producto"
+                autofocus
+              />
+            </div>
+            <div class="form-group py-2">
+              <input
+                type="number"
+                name="precio"
+                step="any"
+                id="precio"
+                class="form-control"
+                placeholder="Precio producto"
+                autofocus
+              />
+            </div>
+            <div class="form-group py-2">
+              <textarea
+                name="descripcion"
+                id="descripcion"
+                rows="3"
+                class="form-control"
+                placeholder="Descripcion producto"
+              ></textarea>
+            </div>
+            <button class="btn btn-primary py-2">Enviar</button>
+          </form>
+          <div class="card card-body" id="products">
+            <h4 class="" id="nameproduct"></h4>
+            <p id="descriptionprodc"></p>
+            <h3 id="precioproduc"></h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
